@@ -93,3 +93,7 @@ umount
             ** $ ip link set dev eth0 up
         - ip link set [name] down (ngắt)
 
+## SSH
+*
+    $ systemctl start ssh
+    $ ssh [name]@[ip]
