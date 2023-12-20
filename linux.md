@@ -50,8 +50,8 @@ vim
 cat
 
 ***
-mount 
-umount
+mount : gắn ổ đĩa
+umount : gỡ gắn ổ đĩa 
 
 #  Chi tiết 
 *  
