@@ -31,6 +31,8 @@ userdel : xóa user
 groupadd
     ** $ sudo groupadd [groupname]
     ** $ sudo usermod -aG [groupname] [username]
+kickUserGroup
+    ** $ sudo deluser [username] [groupname]
 groupdel
     ** $ sudo groupdel [groupname]
     ** 
