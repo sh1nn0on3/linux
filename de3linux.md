@@ -1,5 +1,6 @@
 ## Câu 1
     ?? Mã nguồn NukeViet3.0 được cung cấp bởi loại giấy phép nào 
+    
     Tính đến thời điểm kiến thức của tôi được cập nhật lần cuối vào tháng 1 năm 2022, NukeViet 3.0 (hoặc NukeViet CMS) sử dụng giấy phép GNU General Public License (GPL), phiên bản 2. Điều này có nghĩa là mã nguồn của NukeViet 3.0 là mã nguồn mở, và bạn có quyền sử dụng, sửa đổi và phân phối mã nguồn này dưới điều kiện của GPL.
 
     GPL là một giấy phép phổ biến trong cộng đồng mã nguồn mở và đặt ra một số điều kiện để bảo vệ quyền tự do của người sử dụng. Một số điều quan trọng của GPL bao gồm:
@@ -69,4 +70,14 @@
         * Thực thi (gọi file đấy là done)
             - $ ./sinhvien_bai4.sh
     + Đặt IP tĩnh trên máy chủ Linux 192.168.0.100/255.255.255.0
-        * Dùng lệnh Network tool 
+        * Dùng lệnh cmd
+            - $ ifconfig eth0 192.168.0.100 netmask 255.255.255.0
+                --> nếu lỗi thì do chưa cho eth0 tạo mới là được
+        * kiểm tra 
+            - $ ifconfig eth0
+    + download từ 1 trang nào đấy
+        * 2 cách (cmt lại cho như theo đề bài)
+            - $ curl -o [name_file] [url]
+            - $ wget -o [name_file] [url]
+                --> -o : để đặt tên file url khi tải về 
+        

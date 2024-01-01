@@ -95,6 +95,7 @@ umount : gỡ gắn ổ đĩa
             ** $ ip link set dev eth0 up
         - ip link set [name] down (ngắt)
     ** ifconfig
+        - ifconfig eth0 192.168.0.100 netmask 255.255.255.0
 
 ## SSH
 *
