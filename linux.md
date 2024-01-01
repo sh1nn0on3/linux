@@ -94,6 +94,7 @@ umount : gỡ gắn ổ đĩa
         - ip link set [name] up (mở)
             ** $ ip link set dev eth0 up
         - ip link set [name] down (ngắt)
+    ** ifconfig
 
 ## SSH
 *

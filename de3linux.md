@@ -11,3 +11,62 @@
     3. Tự do phân phối: Bạn có quyền sao chép và phân phối lại phần mềm.
 
     4. Tự do cải tiến: Nếu bạn sửa đổi phần mềm, bạn có quyền phân phối lại phiên bản sửa đổi của mình.
+
+## Câu 2 
+    ?? Cho biết các thư mục sau gồm những gì : /bin/ ; /dev/ ; /home/
+
+        + /bin/ : Đây là nơi chứa các tập tin thực thi (cung cấp các lệnh hệ thống)
+            * ex : cp  , mv , rm , etc
+        + /dev/ : Thư mục chứa các tệp tin thiết bị ( đại diện cho phần cứng) 
+            * ex : thiết bị như ổ đĩa , bàn phím , các thiết bị thông qua hệ thống
+        + /home/ : Đây là thư mục chính của các user trong hệ thống
+            * ex : /home/user1
+
+## Câu 3 
+    + chuyển về root 
+        - $ sudo su 
+    + Tạo file script để lưu và chạy - Tên file là sinhvien_bai3
+        * Tạo file 
+            - $ nano sinhvien_bai3.sh
+        * Viết các lệnh chạy (thêm bash ở dòng đâu)
+            - ex : #/bin/bash
+                    echo (bla bla :>>>)
+        * Cấu hình thêm file thêm quyền thực thi
+            - $ chmod +x sinhvien_bai3.sh
+        * Thực thi (gọi file đấy là done)
+            - $ ./sinhvien_bai3.sh
+    + Xem danh sách ổ địa có trên linux
+        * xem ổ đĩa (1 số lệnh - t dùng mỗi các đầu mấy cái dưới tham khảo cũng được )
+            - $ lsblk
+                -- xem khối lưu trữ , bao gồm ổ đĩa và các vùng
+            - $ fdisk -l 
+                -- xem chi tiết hơn (-l liệt kê thông tin các ổ đĩa ) 
+            - $ df -h 
+                -- hiển thi thông tin về không gian đĩa sử dụng và còn trống trong sys (-h xem kích thước của mỗi ổ (gb , mb , kb ,..) )
+    + Tạo thư mục /KMA/Security
+        * Tạo file
+            - $ mkdir /KMA/Security
+    + Thực hiện ánh xạ ổ đĩa cdrom vào thư mục /KMA/Security 
+        * Gắn ổ đĩa với thư mục
+            - $ sudo mount /dev/sd(X) /KMA/Security 
+                --> mount : lệnh gắn ổ đĩa 
+        * kiểm tra 
+            - $ lsblk 
+    + Copy file bất kỳ trong /KMA/Security tới ổ đĩa gốc "/THI"
+        * đ hiểu đề đ làm :v
+
+## Câu 4
+    + chuyển về root 
+        - $ sudo su 
+    + Tạo file script để lưu và chạy - Tên file là sinhvien_bai3
+        * Tạo file 
+            - $ nano sinhvien_bai3.sh
+        * Viết các lệnh chạy (thêm bash ở dòng đâu)
+            - ex : #/bin/bash
+                    echo (bla bla :>>>)
+        * Cấu hình thêm file thêm quyền thực thi
+            - $ chmod +x sinhvien_bai4.sh
+        * Thực thi (gọi file đấy là done)
+            - $ ./sinhvien_bai4.sh
+    + Đặt IP tĩnh trên máy chủ Linux 192.168.0.100/255.255.255.0
+        * Dùng lệnh Network tool 
